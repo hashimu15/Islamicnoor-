@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IslamicNoor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="start-screen">
+    <h1>Welcome to IslamicNoor</h1>
+    <button onclick="startSite()">Start</button>
+  </div>
+
+  <nav id="nav-menu" style="display:none;">
+    <button onclick="showSection('videos')">Videos</button>
+    <button onclick="showSection('quotes')">Quotes</button>
+    <button onclick="showSection('duas')">Duas</button>
+    <button onclick="showSection('donation')">Donation</button>
+    <button onclick="showSection('live')">Live</button>
+    <button onclick="showSection('noorchat')">Noor Chat</button>
+  </nav>
+
+  <div id="videos" class="section">
+    <h2>Islamic Videos</h2>
+    <iframe src="https://www.youtube.com/embed/H6Zyq02fgGk" allowfullscreen></iframe>
+  </div>
+
+  <div id="quotes" class="section">
+    <h2>Daily Islamic Quotes</h2>
+    <p><b>English:</b> "Indeed, in the remembrance of Allah do hearts find rest." (Qur'an 13:28)</p>
+    <p><b>Urdu:</b> "بے شک اللہ کے ذکر میں دلوں کو سکون ملتا ہے۔" (سورۃ الرعد 13:28)</p>
+  </div>
+
+  <div id="duas" class="section">
+    <h2>Daily Duas</h2>
+    <p><b>Dua before sleeping:</b> "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا"</p>
+    <p>"In Your name, O Allah, I live and die."</p>
+  </div>
+
+  <div id="donation" class="section">
+    <h2>Donate for IslamicNoor</h2>
+    <p>Your donation helps us spread Islamic knowledge.</p>
+    <button>Donate Now</button>
+  </div>
+
+  <div id="live" class="section">
+    <h2>Live Bayanat</h2>
+    <iframe src="https://www.youtube.com/embed/37fcd6bbce228bbffd84cff8ce13d544" allowfullscreen></iframe>
+  </div>
+
+  <div id="noorchat" class="section">
+    <h2>Noor Chat</h2>
+    <p>Private Islamic Messaging — Coming Soon InshaAllah.</p>
+  </div>
+
+  <script>
+    function startSite() {
+      document.getElementById('start-screen').style.display = 'none';
+      document.getElementById('nav-menu').style.display = 'block';
+      showSection('videos');
+    }
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
