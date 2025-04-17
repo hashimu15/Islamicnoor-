@@ -1,0 +1,51 @@
+body {
+  background-image: url('https://i.ibb.co/sF7whWz/islamic-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+#start-screen {
+  display: block;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 20vh;
+}
+.section {
+  display: none;
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.6);
+  margin: 20px;
+  border-radius: 10px;
+}
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+nav button {
+  margin: 5px;
+  background-color: #00695c;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+iframe {
+  width: 90%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+}
